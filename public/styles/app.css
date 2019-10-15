@@ -1,0 +1,71 @@
+:root {
+    --main-color: rgb(250, 211, 72);
+    /* --color-2: rgb(31, 211, 196); */
+    --color-2: rgb(11, 173, 173);
+    --color-3: rgb(237, 137, 157);
+    --color-4: rgb(5, 5, 81, 1);
+}
+
+body, html {
+    height: 100vh;
+    color: var(--color-4);
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+.hero-image {
+    background-image: url("../assets/janita-sumeiko.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-text {
+    margin-left: 50px;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+  }
+  @keyframes fadein {
+      100% {
+          opacity: 1;
+      }
+  }
+.hero-text h1 {
+    color: var(--color-2);
+    font-size: 6rem;
+    margin-top: 80px;
+    text-shadow: none;
+    font-weight: 500;
+}
+.hero-text h4 {
+    color: var(--color-4);
+    font-size: 2em;
+}
+#top-nav {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    color: var(--color-4);
+    margin: 0 10px;
+}
+
+#nav-list li a:hover {
+    color: var(--color-3);
+    text-decoration: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-color);
+}
