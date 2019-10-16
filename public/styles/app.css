@@ -1,5 +1,6 @@
 :root {
-    --main-color: rgb(250, 211, 72);
+    --main-color: rgb(245, 195, 16);
+    /* --main-color: rgb(250, 211, 72); */
     /* --color-2: rgb(31, 211, 196); */
     --color-2: rgb(11, 173, 173);
     --color-3: rgb(237, 137, 157);
@@ -60,12 +61,37 @@ body, html {
 }
 
 #nav-list li a:hover {
-    color: var(--color-3);
+    color: var(--color-2);
     text-decoration: none;
+}
+.navbar-toggler-icon {
+    width: 100%;
 }
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: var(--main-color);
+    animation: 0.5s fadein 0s forwards;
+    opacity: 0;
+    z-index: 1;
 }
+.about {
+    display: flex;
+    margin: 30px 15px;
+}
+.headshot {
+    border-radius: 50%;
+    padding: 30px;
+}
+@media only screen and (max-width: 740px) {
+    .hero-text h1 {
+      font-size: 4rem;
+    }
+    .hero-text h4 {
+        font-size: 1.5rem;
+      }
+    .hero-text {
+        margin-left: 20px;
+    }
+  }
