@@ -95,3 +95,6 @@ body, html {
         margin-left: 20px;
     }
   }
+  .about-text {
+      margin: auto auto;
+  }
