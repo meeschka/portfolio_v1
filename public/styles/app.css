@@ -132,11 +132,35 @@ h2 {
 }
 .storyIcon {
     color: var(--color-3);
-    margin: 5px 5px 10px 5px;
+    margin: 5px 5px 20px 5px;
 }
+
 .contactIcon {
-    color: var(--color-2);
+    color: var(--color-4);
+    margin: 5px;
+}
+.contactIcon:hover {
+    color: white;
 }
 .icons {
     text-align: center;
 }
+footer {
+    margin-top:30px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+}
+.contact-icons {
+    float: left;
+    padding-left: 20px;
+}
+.copyright {
+    float: right;
+    padding-right: 20px;
+    margin: 10px 0px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
