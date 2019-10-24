@@ -78,7 +78,7 @@ body, html {
 }
 .about {
     display: flex;
-    margin: 30px 15px;
+    margin: 10px 15px;
 }
 .headshot {
     border-radius: 50%;
@@ -95,6 +95,48 @@ body, html {
         margin-left: 20px;
     }
   }
-  .about-text {
+  @media only screen and (max-width: 460px) {
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+    .hero-text h4 {
+        font-size: 1.25rem;
+      }
+    .hero-text {
+        margin-left: 20px;
+    }
+  }
+.about-text {
       margin: auto auto;
   }
+h2 span {
+      border-bottom: 5px solid var(--color-2);
+  }
+h2 {
+      text-align: center;
+      margin: 3rem auto;
+  }
+.carousel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.carousel-indicators .active{
+    background-color: var(--color-2);
+}
+.carouselIcon {
+    color: var(--color-2);
+}
+.skillIcon {
+    color: var(--color-2);
+    margin: 5px;
+}
+.storyIcon {
+    color: var(--color-3);
+    margin: 5px 5px 10px 5px;
+}
+.contactIcon {
+    color: var(--color-2);
+}
+.icons {
+    text-align: center;
+}
