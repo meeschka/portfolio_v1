@@ -65,9 +65,10 @@ body, html {
     color: var(--color-2);
     text-decoration: none;
 }
-.navbar-text a .navIcon {
-    
+#top-nav .navbar-text a:hover {
+    text-decoration: none;
 }
+
 .navbar-toggler-icon {
     width: 100%;
 }
@@ -167,4 +168,48 @@ footer {
     content: "";
     clear: both;
     display: table;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    align-content: space-between;
+      
+  }
+  .contact > * {
+    border: 3px solid var(--color-2);
+    padding: 1rem;
+    margin: 2.5%;
+    border-radius: 8px;
+  }
+  .contact_input {
+    width: 45%;
+    min-width: 100px;
+    text-align: center;
+  }
+  .contact_textarea {
+    width: 95%;
+    height: 300px;
+  }
+  .btn-contact {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .btn-contact:hover {
+    background: var(--color-3);
+    border-color: var(--color-3);
+    color: white;
+  }
+  .contact > *:focus {
+    border-color: var(--color-3);
+    -webkit-box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+    box-shadow: inset 0 1px 1px var(--color-3), 0 0 8px var(--color-3);
+  }
+  @media only screen and (max-width: 500px) {
+      .contact_input {
+          width: 95%;
+      }
   }
