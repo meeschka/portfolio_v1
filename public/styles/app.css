@@ -15,7 +15,7 @@ body, html {
     font-family: "Nunito", sans-serif;
 }
 .hero-image {
-    background-image: url("../assets/janita-sumeiko.jpg");
+    background-image: url("../assets/janita-sumeiko-small.jpg");
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
