@@ -258,6 +258,12 @@ footer {
       }
   }
   .carousel-text {
-    background: grey;
+    text-align: center;
     padding: 1em;
+    text-decoration: none;
+    margin-top: 10px;
+    color: var(--color-4);
+  }
+  a.portfolio-link:hover {
+      text-decoration: none;
   }
