@@ -257,3 +257,7 @@ footer {
           width: 95%;
       }
   }
+  .carousel-text {
+    background: grey;
+    padding: 1em;
+  }
